@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="مصطفى العبقرى — منظومة تعليمية متكاملة: دروس بالفيديو، اختبارات فورية، شهادات تقدير، ودردشة مع المعلم.">
+<link rel="icon" type="image/png" href="logo.png">
+<title>مصطفى العبقرى</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@500;600;700&family=Tajawal:wght@400;500;700;800&display=swap">
+<style>
+  :root{
+    --bg:#1E1813; --bg2:#2A211B; --surface:#33291F; --surface2:#3B2F24;
+    --line:#4E3E2E; --gold:#E7B740; --gold-lite:#F4D06F; --lapis:#27A9CF;
+    --lapis-deep:#1284A8; --sand:#F0E7D2; --muted:#C9B9A4; --ink:#1E1813;
+    --shadow:0 18px 50px rgba(0,0,0,.45);
+    --maxw:1120px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth;overflow-x:hidden}
+  body{
+    margin:0; background:
+      radial-gradient(1200px 600px at 80% -10%, #3a2c20 0%, transparent 60%),
+      radial-gradient(900px 500px at 0% 10%, #2b2119 0%, transparent 55%),
+      linear-gradient(180deg,var(--bg) 0%, var(--bg2) 100%);
+    color:var(--sand);
+    font-family:"Tajawal",system-ui,"Segoe UI",Tahoma,sans-serif;
+    line-height:1.7; direction:rtl; overflow-x:hidden;
+  }
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:var(--maxw); margin-inline:auto; padding-inline:22px}
+  .display{font-family:"Reem Kufi","Tajawal",serif}
+  .eyebrow{
+    font-family:"Reem Kufi",sans-serif; letter-spacing:.14em; font-size:.8rem;
+    color:var(--gold); text-transform:uppercase;
+  }
+
+  /* ===== top bar ===== */
+  header.nav{position:sticky;top:0;z-index:50;backdrop-filter:blur(10px);
+    background:rgba(30,24,19,.78); border-bottom:1px solid var(--line)}
+  .nav .wrap{display:flex;align-items:center;justify-content:space-between;height:66px}
+  .brand{display:flex;align-items:center;gap:12px;font-family:"Reem Kufi";font-weight:700;font-size:1.15rem}
+  .brand img{width:38px;height:38px;border-radius:9px;box-shadow:0 4px 14px rgba(0,0,0,.4)}
+  .nav a.cta{background:linear-gradient(180deg,var(--gold-lite),var(--gold));color:var(--ink);
+    padding:9px 18px;border-radius:11px;font-weight:800;font-size:.95rem;box-shadow:0 6px 18px rgba(231,183,64,.28)}
+
+  /* ===== hero ===== */
+  .hero{position:relative;padding:64px 0 40px}
+  .hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+  @media(max-width:840px){.hero .wrap{grid-template-columns:1fr;text-align:center}}
+  h1.title{font-family:"Reem Kufi";font-weight:700;line-height:1.15;text-wrap:balance;
+    font-size:clamp(2.4rem,6vw,4rem);margin:14px 0 10px;
+    background:linear-gradient(180deg,#fff 0%,var(--gold-lite) 60%,var(--gold) 100%);
+    -webkit-background-clip:text;background-clip:text;color:transparent}
+  .lead{font-size:clamp(1.05rem,2.2vw,1.28rem);color:var(--sand);max-width:44ch;margin:0 auto}
+  @media(min-width:841px){.lead{margin:0}}
+  .hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:26px}
+  @media(max-width:840px){.hero-actions{justify-content:center}}
+  .btn-dl{display:inline-flex;align-items:center;gap:12px;
+    background:linear-gradient(180deg,var(--gold-lite),var(--gold));color:var(--ink);
+    padding:16px 28px;border-radius:15px;font-weight:800;font-size:1.15rem;
+    box-shadow:0 12px 30px rgba(231,183,64,.32);transition:transform .15s ease, box-shadow .15s ease}
+  .btn-dl:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(231,183,64,.42)}
+  .btn-dl svg{width:26px;height:26px}
+  .btn-ghost{display:inline-flex;align-items:center;gap:8px;padding:16px 22px;border-radius:15px;
+    border:1px solid var(--line);color:var(--sand);font-weight:700;background:rgba(255,255,255,.03)}
+  .meta{margin-top:14px;color:var(--muted);font-size:.92rem}
+  .meta b{color:var(--sand)}
+
+  /* logo medallion */
+  .medallion{position:relative;display:grid;place-items:center;min-height:320px}
+  .halo{position:absolute;width:min(420px,80vw);aspect-ratio:1;border-radius:50%;
+    background:radial-gradient(circle,rgba(231,183,64,.28) 0%,rgba(231,183,64,0) 62%);
+    filter:blur(6px);animation:pulse 5s ease-in-out infinite}
+  .logo-main{position:relative;width:min(360px,74vw);border-radius:28px;
+    box-shadow:var(--shadow),0 0 0 1px var(--line);animation:float 6s ease-in-out infinite}
+  .ring{position:absolute;width:min(470px,86vw);aspect-ratio:1;border:1px dashed rgba(231,183,64,.35);
+    border-radius:50%;animation:spin 34s linear infinite}
+  @keyframes float{0%,100%{transform:translateY(-8px)}50%{transform:translateY(10px)}}
+  @keyframes pulse{0%,100%{opacity:.7;transform:scale(1)}50%{opacity:1;transform:scale(1.06)}}
+  @keyframes spin{to{transform:rotate(360deg)}}
+
+  /* ===== stats ===== */
+  .stats{border-block:1px solid var(--line);background:rgba(0,0,0,.16)}
+  .stats .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding-block:26px}
+  .stat{text-align:center}
+  .stat .num{font-family:"Reem Kufi";font-weight:700;font-size:clamp(1.8rem,5vw,2.7rem);
+    color:var(--gold-lite);font-variant-numeric:tabular-nums;line-height:1}
+  .stat .lbl{color:var(--muted);font-size:.95rem;margin-top:6px}
+  .stat + .stat{border-inline-start:1px solid var(--line)}
+
+  /* ===== sections ===== */
+  section{padding:70px 0}
+  .sec-head{text-align:center;max-width:60ch;margin:0 auto 40px}
+  .sec-head h2{font-family:"Reem Kufi";font-weight:700;font-size:clamp(1.7rem,4vw,2.5rem);
+    text-wrap:balance;margin:.3em 0}
+  .sec-head p{color:var(--muted);font-size:1.05rem}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:18px}
+  .card{background:linear-gradient(180deg,var(--surface),var(--surface2));border:1px solid var(--line);
+    border-radius:18px;padding:24px;transition:transform .18s ease,border-color .18s ease}
+  .card:hover{transform:translateY(-5px);border-color:rgba(231,183,64,.5)}
+  .ic{width:52px;height:52px;border-radius:13px;display:grid;place-items:center;margin-bottom:14px;
+    background:radial-gradient(circle at 30% 25%,rgba(231,183,64,.28),rgba(23,62,134,.30));border:1px solid var(--line)}
+  .ic svg{width:28px;height:28px;stroke:var(--gold-lite);fill:none;stroke-width:1.8}
+  .card h3{font-family:"Reem Kufi";font-weight:600;font-size:1.2rem;margin:0 0 6px}
+  .card p{margin:0;color:var(--muted);font-size:.98rem}
+
+  /* about / phone */
+  .about .wrap{display:grid;grid-template-columns:.95fr 1.05fr;gap:44px;align-items:center}
+  @media(max-width:840px){.about .wrap{grid-template-columns:1fr}}
+  .about ul{list-style:none;margin:18px 0 0;padding:0;display:grid;gap:14px}
+  .about li{display:flex;gap:12px;align-items:flex-start}
+  .about li .tick{flex:none;width:26px;height:26px;border-radius:50%;display:grid;place-items:center;
+    background:var(--lapis-deep);color:var(--gold-lite);font-weight:800;font-size:.8rem;margin-top:3px}
+  .phone{justify-self:center;width:min(300px,80vw);aspect-ratio:9/19;border-radius:34px;padding:12px;
+    background:linear-gradient(160deg,#3a2e24,#1E1813);border:1px solid var(--line);box-shadow:var(--shadow)}
+  .screen{height:100%;border-radius:24px;background:linear-gradient(180deg,#2b2119,#1E1813);
+    border:1px solid var(--line);overflow:hidden;display:flex;flex-direction:column}
+  .screen .top{background:linear-gradient(135deg,var(--lapis-deep),#2A211B);padding:20px 16px;text-align:center}
+  .screen .top img{width:74px;border-radius:14px}
+  .screen .top .nm{font-family:"Reem Kufi";color:var(--gold-lite);font-weight:700;margin-top:8px}
+  .screen .body{padding:14px;display:grid;gap:10px}
+  .row{background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:12px;padding:11px 12px;
+    display:flex;align-items:center;gap:10px;font-size:.85rem;color:var(--sand)}
+  .row .dot{width:30px;height:30px;border-radius:9px;background:radial-gradient(circle,rgba(231,183,64,.3),rgba(23,62,134,.3));
+    border:1px solid var(--line);flex:none}
+  .row small{color:var(--muted);display:block;font-size:.72rem}
+
+  /* download band */
+  .band{margin:0 auto;max-width:var(--maxw);border-radius:26px;
+    background:linear-gradient(135deg,var(--lapis-deep),#2A211B);border:1px solid var(--line);
+    padding:48px 26px;text-align:center;position:relative;overflow:hidden}
+  .band::before{content:"";position:absolute;inset:-40% -10% auto;height:200px;
+    background:radial-gradient(circle,rgba(231,183,64,.22),transparent 60%);pointer-events:none}
+  .band h2{font-family:"Reem Kufi";font-size:clamp(1.6rem,4vw,2.4rem);margin:0 0 8px}
+  .band p{color:var(--muted);margin:0 0 24px}
+
+  footer{border-top:1px solid var(--line);padding:34px 0;margin-top:70px;color:var(--muted)}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between}
+  footer .brand{color:var(--sand)}
+  .reveal{animation:rise .8s cubic-bezier(.2,.7,.2,1) both}
+  .d1{animation-delay:.05s}.d2{animation-delay:.15s}.d3{animation-delay:.25s}.d4{animation-delay:.35s}
+  @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+  @media(prefers-reduced-motion:reduce){
+    .reveal,.logo-main,.halo,.ring{animation:none!important}
+  }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <div class="brand"><img src="logo.png" alt="مصطفى العبقرى"><span>مصطفى العبقرى</span></div>
+    <a class="cta" href="#download">تحميل التطبيق</a>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="reveal d1">
+        <span class="eyebrow">مستر</span>
+        <h1 class="title">مصطفى العبقرى</h1>
+        <p class="lead">دروسك بالفيديو، تستات فورية على كل درس، شهادات تقدير، ودردشة مباشرة
+          مع معلمك — كل مادتك في تطبيق واحد على موبايلك.</p>
+        <div class="hero-actions">
+          <a class="btn-dl" id="dl" href="mostafa-elabqary.apk" download>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 3v12M7 11l5 5 5-5M5 21h14"/></svg>
+            تحميل مباشر (APK)
+          </a>
+          <a class="btn-dl" href="app/" style="background:linear-gradient(180deg,#27A9CF,#1284A8);color:#fff">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.6 2.7 2.6 15.3 0 18M12 3c-2.6 2.7-2.6 15.3 0 18"/></svg>
+            افتح على الويب
+          </a>
+          <a class="btn-ghost" href="#features">تعرّف على المميزات</a>
+        </div>
+        <p class="meta">أندرويد + آيفون (عبر الويب) • مجانًا • آخر إصدار <b>1.0.0</b></p>
+      </div>
+      <div class="medallion reveal d2">
+        <div class="halo"></div>
+        <div class="ring"></div>
+        <img class="logo-main" src="logo.png" alt="مصطفى العبقرى">
+      </div>
+    </div>
+  </section>
+  </div>
+
+  <!-- FEATURES -->
+  <section id="features">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">ليه مصطفى العبقرى</span>
+        <h2>كل أدوات تفوّقك في مكان واحد</h2>
+        <p>صُمّم ليخلّي مذاكرتك أسهل وأمتع، ويربطك بمعلمك في أي وقت.</p>
+      </div>
+      <div class="grid">
+        <div class="card reveal d1"><div class="ic"><svg viewBox="0 0 24 24"><polygon points="10 8 16 12 10 16 10 8"/><rect x="3" y="4" width="18" height="16" rx="3"/></svg></div>
+          <h3>دروس بالفيديو</h3><p>شرح كل درس بفيديو واضح يُشاهَد داخل التطبيق فقط، مع تفاصيل كل درس.</p></div>
+        <div class="card reveal d1"><div class="ic"><svg viewBox="0 0 24 24"><path d="M9 11l3 3 7-7"/><path d="M20 12v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h9"/></svg></div>
+          <h3>تستات فورية</h3><p>كويز مفتوح على كل درس بتصحيح لحظي، تقدر تعيده وتتابع تحسّنك.</p></div>
+        <div class="card reveal d2"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="5"/><path d="M8 21l4-3 4 3-1.5-6"/></svg></div>
+          <h3>شهادات تقدير</h3><p>شهادة باسمك وعليها توقيع معلمك، تنزّلها كصورة وتفتخر بيها.</p></div>
+        <div class="card reveal d2"><div class="ic"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+          <h3>دردشة مع المعلم</h3><p>غرفة أسئلة يفتحها المعلم في وقت محدد، تسأل وتاخد إجابتك مباشرة.</p></div>
+        <div class="card reveal d3"><div class="ic"><svg viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></div>
+          <h3>حماية من الغش</h3><p>منع تصوير الشاشة داخل التطبيق، وجلسة واحدة لكل طالب على جهاز واحد.</p></div>
+        <div class="card reveal d3"><div class="ic"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 15l3-3 3 2 4-5"/></svg></div>
+          <h3>متابعة النتائج</h3><p>نتيجتك وترتيبك ونقاط ضعفك بعد كل اختبار، وولي أمرك يتابع بالهاتف.</p></div>
+        <div class="card reveal d4"><div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 4v16"/></svg></div>
+          <h3>دخول برقم الجلوس</h3><p>الطالب يدخل برقم جلوسه فقط ويلاقي وحداته ودروسه واختباراته جاهزة.</p></div>
+        <div class="card reveal d4"><div class="ic"><svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div>
+          <h3>منهج منظم</h3><p>وحدات ودروس منظّمة لكل صف، يضيفها مستر مصطفى ويحدّثها بسهولة.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT + PHONE -->
+  <section class="about">
+    <div class="wrap">
+      <div class="reveal d1">
+        <span class="eyebrow">تجربة الطالب</span>
+        <h2 class="display" style="font-size:clamp(1.7rem,4vw,2.4rem);margin:.3em 0">مذاكرة أوضح… ونتيجة أعلى</h2>
+        <p style="color:var(--muted)">من أول ما تفتح التطبيق تلاقي كل حاجة مرتّبة لك: الوحدة من بره،
+          تفتحها تلاقي دروسها بفيديوهاتها وتفاصيلها، وبعد كل درس تست يقيس فهمك.</p>
+        <ul>
+          <li><span class="tick">✓</span><div>واجهة عربية بسيطة تناسب الطالب وولي الأمر والمعلم.</div></li>
+          <li><span class="tick">✓</span><div>يشتغل حتى مع الفيديوهات المقفول تضمينها — تشغيل مباشر سلس.</div></li>
+          <li><span class="tick">✓</span><div>شهادة بتوقيع المعلم تحفّز الطالب على الاستمرار.</div></li>
+          <li><span class="tick">✓</span><div>دردشة منظّمة يفتحها المعلم وقت المراجعة للأسئلة.</div></li>
+        </ul>
+      </div>
+      <div class="phone reveal d2" aria-hidden="true">
+        <div class="screen">
+          <div class="top"><img src="logo.png" alt=""><div class="nm">مصطفى العبقرى</div></div>
+          <div class="body">
+            <div class="row"><span class="dot"></span><div>الوحدة الأولى<small>دروس • فيديو</small></div></div>
+            <div class="row"><span class="dot"></span><div>الدرس الأول<small>شرح + PDF</small></div></div>
+            <div class="row"><span class="dot"></span><div>كويز الدرس<small>تست مفتوح • اضغط للبدء</small></div></div>
+            <div class="row"><span class="dot"></span><div>شهادة تقدير<small>باسمك وتوقيع معلمك</small></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOWNLOAD -->
+  <section id="download">
+    <div class="band reveal d1">
+      <span class="eyebrow">جاهز تبدأ؟</span>
+      <h2>حمّل تطبيق مصطفى العبقرى دلوقتي</h2>
+      <p>اضغط الزر وينزل التطبيق مباشرة على موبايلك.</p>
+      <a class="btn-dl" href="mostafa-elabqary.apk" download>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 3v12M7 11l5 5 5-5M5 21h14"/></svg>
+        تحميل مباشر (APK)
+      </a>
+      <a class="btn-dl" href="app/" style="margin-top:12px;background:linear-gradient(180deg,#27A9CF,#1284A8);color:#fff">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.6 2.7 2.6 15.3 0 18M12 3c-2.6 2.7-2.6 15.3 0 18"/></svg>
+        افتح على الويب (آيفون / أندرويد)
+      </a>
+      <p class="meta" style="margin-top:16px">الويب يفتح على أي جهاز (آيفون كمان). لو نزّلت APK وظهر تنبيه "مصدر غير معروف" اسمح بالتثبيت — التطبيق آمن.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="brand"><img src="logo.png" alt="" style="width:34px;height:34px;border-radius:8px"><span>مصطفى العبقرى</span></div>
+    <div>منظومة تعليمية متكاملة — للتواصل: 01068192608</div>
+    <div>© 2026 مصطفى العبقرى</div>
+  </div>
+</footer>
+
+<script>
+  // عدّادات الإحصائيات (تنتهي عند الرقم الحقيقي؛ النص الثابت يظهر أولًا)
+  (function(){
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    function fmt(n,dec){ return dec ? n.toFixed(dec) : Math.round(n).toLocaleString('en-US'); }
+    document.querySelectorAll('.num[data-count]').forEach(function(el){
+      var target = parseFloat(el.getAttribute('data-count'));
+      var dec = parseInt(el.getAttribute('data-dec')||'0',10);
+      var suffix = el.getAttribute('data-suffix')||'';
+      if(reduce){ return; }
+      var start = performance.now(), dur = 1400;
+      function tick(t){
+        var p = Math.min(1,(t-start)/dur), e = 1-Math.pow(1-p,3);
+        el.textContent = (suffix?suffix:'') + fmt(target*e,dec);
+        if(p<1) requestAnimationFrame(tick);
+        else el.textContent = (suffix?suffix:'') + fmt(target,dec);
+      }
+      requestAnimationFrame(tick);
+    });
+  })();
+</script>
+</body>
+</html>
